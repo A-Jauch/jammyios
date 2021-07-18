@@ -25,7 +25,7 @@ struct QueryUpateResult: Codable{
 }
 
 struct QueryUpdateQuery : Codable {
-    var user_id: Int
-    var jam_id: Int
+    var participant: Int
+    var jam: Int
     var status: Int
 }

@@ -13,6 +13,12 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     @IBAction func goToJam(_ sender: Any) {
         let createJam = CreateJamViewController(nibName: "CreateJamViewController", bundle: nil)
         self.navigationController?.pushViewController(createJam, animated: true)

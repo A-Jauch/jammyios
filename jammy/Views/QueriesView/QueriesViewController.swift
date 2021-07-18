@@ -86,7 +86,7 @@ class QueriesViewController: UIViewController {
                     if !queriesResult.results.isEmpty {
                         for q in queriesResult.results {
                             if q.status == 0 {
-                                queriesUser.append(QueryUser(name: q.user.name + " " + q.user.lastname, instrument: q.user.instrument.name, queryId: q.id))
+                                queriesUser.append(QueryUser(name: q.user.name + " " + q.user.lastname, instrument: q.user.instrument.name, queryId: q.id, participant: q.user))
                             }
                         }
                     }
@@ -160,7 +160,7 @@ private extension QueriesViewController {
     func handleSwipe1(for action: UIContextualAction, item: QueryUser, index: Int) {
         //Accept User In Jam
         print("swipe 1")
-        self.updateQuery(token: self.token, jamId: jam.id, queryId: item.queryId, userId: id, accept: 1, index: index)
+        self.updateQuery(token: self.token, jamId: jam.id, queryId: item.queryId, userId: item.participant.id, accept: 1, index: index)
     }
     
     func handleSwipe2(for action: UIContextualAction, item: QueryUser, index: Int) {

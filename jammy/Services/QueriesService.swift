@@ -59,11 +59,13 @@ class QueriesService {
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
             urlRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
             
-            let query = QueryUpdateQuery(user_id: userId, jam_id: jamId, status: accept)
+            let query = QueryUpdateQuery(participant: userId, jam: jamId, status: accept)
+            
            
            
            let jsonData =  try! JSONEncoder().encode(query)
            urlRequest.httpBody = jsonData
+            print(jsonData)
             
             let dataTask = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
                 

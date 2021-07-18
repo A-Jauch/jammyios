@@ -42,6 +42,10 @@ class MyJamsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     private func getJamsById(token: String, id: Int)->Void{
         JamApi.getJamsById(token: token, uid: id){
             [self] (result) in

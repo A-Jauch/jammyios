@@ -20,6 +20,7 @@ class JamViewController: UIViewController, UICollectionViewDataSource, UICollect
     var participants:[UserJam] = []
     @IBOutlet var collectionView: UICollectionView!
     let cellIdentifier = "cellIdentifier"
+    private let refreshControl = UIRefreshControl()
     
     
     class func newInstance(nibName: String?, jam: Jam) -> JamViewController{
@@ -44,8 +45,28 @@ class JamViewController: UIViewController, UICollectionViewDataSource, UICollect
         self.titleField.text = jam.name
         self.descriptionField.text = jam.description
         self.createdAtField.text = jam.createdAt
-        self.getParticipants(token: token, jamId: jam.id)
+        
+        if #available(iOS 10.0, *){
+            self.collectionView.refreshControl = refreshControl
+        } else {
+            self.collectionView.addSubview(refreshControl)
+        }
+        
+        refreshControl.addTarget(self, action: #selector(refreshCollectionView(_:)), for: .valueChanged)
+        
 
+    }
+    
+    @objc private func refreshCollectionView(_ sender: Any) {
+        self.getParticipants(token: token, jamId: jam.id)
+        self.collectionView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+        self.getParticipants(token: token, jamId: jam.id)
+        self.collectionView.reloadData()
     }
     
     func getDocumentsDirectory() -> URL {
@@ -64,6 +85,7 @@ class JamViewController: UIViewController, UICollectionViewDataSource, UICollect
                 switch result{
                 case.success(let sessionResult):
                     if !sessionResult.results.isEmpty {
+                        participants.removeAll()
                         for s in sessionResult.results {
                             participants.append(s.user)
                         }
@@ -72,7 +94,7 @@ class JamViewController: UIViewController, UICollectionViewDataSource, UICollect
                         self.collectionView.register(UINib(nibName: "JamCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
                         self.collectionView.delegate = self
                         self.collectionView.dataSource = self
-                        
+                        self.refreshControl.endRefreshing()
                     }
                     break
                         

@@ -13,11 +13,13 @@ struct QueryUser: Codable {
     let name: String
     let instrument: String
     let queryId: Int
+    let participant: UserQuery
     
-    init(name: String, instrument: String, queryId: Int) {
+    init(name: String, instrument: String, queryId: Int, participant: UserQuery) {
         self.name = name
         self.instrument = instrument
         self.queryId = queryId
+        self.participant = participant
     }
 }
 
