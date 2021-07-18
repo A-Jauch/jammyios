@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Coiny-Regular.ttf">
+            <string>Coiny-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateJamViewController" customModule="jammy" customModuleProvider="target">
+            <connections>
+                <outlet property="jamDescription" destination="aar-Cr-W2x" id="YU9-o0-LLJ"/>
+                <outlet property="jamName" destination="7Hi-Se-h7G" id="80N-kD-8rp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jam Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-Se-h7G">
+                    <rect key="frame" x="287" y="509" width="450" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="450" id="SWl-he-SMh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aar-Cr-W2x">
+                    <rect key="frame" x="287" y="605" width="450" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="6r9-72-sMd"/>
+                        <constraint firstAttribute="width" constant="450" id="ChG-5j-ONz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVp-6O-zUc">
+                    <rect key="frame" x="362" y="735" width="300" height="45"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="8op-h3-gLT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Coiny-Regular" family="Coiny" pointSize="33"/>
+                    <state key="normal" title="Create Jam">
+                        <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createJam:" destination="-1" eventType="touchUpInside" id="6DI-lL-b22"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="7Hi-Se-h7G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AMT-5V-cjR"/>
+                <constraint firstItem="aar-Cr-W2x" firstAttribute="top" secondItem="7Hi-Se-h7G" secondAttribute="bottom" constant="60" id="S2J-el-3pX"/>
+                <constraint firstItem="aar-Cr-W2x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U1b-jQ-G9s"/>
+                <constraint firstItem="XVp-6O-zUc" firstAttribute="top" secondItem="aar-Cr-W2x" secondAttribute="bottom" constant="50" id="iX7-7H-xnA"/>
+                <constraint firstItem="XVp-6O-zUc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pdP-VK-Dbt"/>
+                <constraint firstItem="7Hi-Se-h7G" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="509" id="wZN-7c-gya"/>
+            </constraints>
+            <point key="canvasLocation" x="111.91406249999999" y="55.783308931185942"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

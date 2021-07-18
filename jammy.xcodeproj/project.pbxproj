@@ -7,23 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A1EF4FC263D5F280050EBD9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EF4FB263D5F280050EBD9 /* User.swift */; };
+		7A1EF501263D60130050EBD9 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EF500263D60130050EBD9 /* UserService.swift */; };
+		7A1EF507263D61F90050EBD9 /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EF506263D61F90050EBD9 /* Connect.swift */; };
+		7A1EF50A263D627B0050EBD9 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EF509263D627B0050EBD9 /* UserLogin.swift */; };
+		7A1EF50F263D63930050EBD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1EF50D263D63930050EBD9 /* LoginViewController.swift */; };
+		7A1EF510263D63930050EBD9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EF50E263D63930050EBD9 /* LoginViewController.xib */; };
+		7A4A22CD265275AB00483DAA /* MyJamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A22CB265275AB00483DAA /* MyJamsViewController.swift */; };
+		7A4A22CE265275AB00483DAA /* MyJamsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A22CC265275AB00483DAA /* MyJamsViewController.xib */; };
+		7A4A22D32652797100483DAA /* MyJamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4A22D12652797100483DAA /* MyJamsTableViewCell.swift */; };
+		7A4A22D42652797100483DAA /* MyJamsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4A22D22652797100483DAA /* MyJamsTableViewCell.xib */; };
+		7A4AB479264FE2C5003A2A8E /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AB478264FE2C5003A2A8E /* Role.swift */; };
+		7A4AB47D26526ED9003A2A8E /* JamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4AB47B26526ED9003A2A8E /* JamViewController.swift */; };
+		7A4AB47E26526ED9003A2A8E /* JamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4AB47C26526ED9003A2A8E /* JamViewController.xib */; };
+		7A610CF9266142A10047DAA5 /* JamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A610CF7266142A10047DAA5 /* JamCollectionViewCell.swift */; };
+		7A610CFA266142A10047DAA5 /* JamCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A610CF8266142A10047DAA5 /* JamCollectionViewCell.xib */; };
+		7A7CA3AF265E9B3C0069C0CB /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CA3AE265E9B3C0069C0CB /* Session.swift */; };
+		7A7CA3B2265E9BAC0069C0CB /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CA3B1265E9BAC0069C0CB /* SessionService.swift */; };
+		7A8B6C6326666689009DB7F4 /* QueriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B6C6126666689009DB7F4 /* QueriesViewController.swift */; };
+		7A8B6C6426666689009DB7F4 /* QueriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A8B6C6226666689009DB7F4 /* QueriesViewController.xib */; };
+		7A8B6C6726668611009DB7F4 /* QueriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B6C6626668611009DB7F4 /* QueriesService.swift */; };
+		7A8B6C6B26668692009DB7F4 /* Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B6C6A26668692009DB7F4 /* Queries.swift */; };
+		7A8B6C6E26668B69009DB7F4 /* QueryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8B6C6D26668B69009DB7F4 /* QueryUser.swift */; };
 		7AC39306262C8A2100A66151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC39305262C8A2100A66151 /* AppDelegate.swift */; };
 		7AC39308262C8A2100A66151 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC39307262C8A2100A66151 /* SceneDelegate.swift */; };
-		7AC3930A262C8A2100A66151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC39309262C8A2100A66151 /* ViewController.swift */; };
-		7AC3930D262C8A2100A66151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC3930B262C8A2100A66151 /* Main.storyboard */; };
 		7AC3930F262C8A2400A66151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC3930E262C8A2400A66151 /* Assets.xcassets */; };
-		7AC39312262C8A2400A66151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC39310262C8A2400A66151 /* LaunchScreen.storyboard */; };
+		7AC3931F262C8B1100A66151 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC3931D262C8B1100A66151 /* HomeViewController.swift */; };
+		7AC39320262C8B1100A66151 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC3931E262C8B1100A66151 /* HomeViewController.xib */; };
+		7AC3932F262D8C2900A66151 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC3932D262D8C2900A66151 /* MenuViewController.swift */; };
+		7AC39330262D8C2900A66151 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC3932E262D8C2900A66151 /* MenuViewController.xib */; };
+		7AC39338262D8F2B00A66151 /* Coiny-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AC39337262D8F0E00A66151 /* Coiny-Regular.ttf */; };
+		7AD3497E26419FBE00EEE510 /* Jam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD3497D26419FBE00EEE510 /* Jam.swift */; };
+		7AD349832641A0B500EEE510 /* CreateJamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD349812641A0B500EEE510 /* CreateJamViewController.swift */; };
+		7AD349842641A0B500EEE510 /* CreateJamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD349822641A0B500EEE510 /* CreateJamViewController.xib */; };
+		7AD349872641A2D800EEE510 /* JamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD349862641A2D800EEE510 /* JamService.swift */; };
+		D3EF4CFF26A3247100850968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EF4CFE26A3247100850968 /* LaunchScreen.storyboard */; };
+		D3EF4D0426A461C900850968 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF4D0326A461C900850968 /* Instrument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A1EF4FB263D5F280050EBD9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7A1EF500263D60130050EBD9 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7A1EF506263D61F90050EBD9 /* Connect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
+		7A1EF509263D627B0050EBD9 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		7A1EF50D263D63930050EBD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7A1EF50E263D63930050EBD9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7A4A22CB265275AB00483DAA /* MyJamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJamsViewController.swift; sourceTree = "<group>"; };
+		7A4A22CC265275AB00483DAA /* MyJamsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyJamsViewController.xib; sourceTree = "<group>"; };
+		7A4A22D12652797100483DAA /* MyJamsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJamsTableViewCell.swift; sourceTree = "<group>"; };
+		7A4A22D22652797100483DAA /* MyJamsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyJamsTableViewCell.xib; sourceTree = "<group>"; };
+		7A4AB478264FE2C5003A2A8E /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		7A4AB47B26526ED9003A2A8E /* JamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamViewController.swift; sourceTree = "<group>"; };
+		7A4AB47C26526ED9003A2A8E /* JamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JamViewController.xib; sourceTree = "<group>"; };
+		7A610CF7266142A10047DAA5 /* JamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A610CF8266142A10047DAA5 /* JamCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JamCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A7CA3AE265E9B3C0069C0CB /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		7A7CA3B1265E9BAC0069C0CB /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		7A8B6C6126666689009DB7F4 /* QueriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueriesViewController.swift; sourceTree = "<group>"; };
+		7A8B6C6226666689009DB7F4 /* QueriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueriesViewController.xib; sourceTree = "<group>"; };
+		7A8B6C6626668611009DB7F4 /* QueriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueriesService.swift; sourceTree = "<group>"; };
+		7A8B6C6A26668692009DB7F4 /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
+		7A8B6C6D26668B69009DB7F4 /* QueryUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryUser.swift; sourceTree = "<group>"; };
 		7AC39302262C8A2100A66151 /* jammy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jammy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC39305262C8A2100A66151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AC39307262C8A2100A66151 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AC39309262C8A2100A66151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7AC3930C262C8A2100A66151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AC3930E262C8A2400A66151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7AC39311262C8A2400A66151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AC39313262C8A2400A66151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AC3931D262C8B1100A66151 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7AC3931E262C8B1100A66151 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		7AC3932D262D8C2900A66151 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7AC3932E262D8C2900A66151 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		7AC39337262D8F0E00A66151 /* Coiny-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Coiny-Regular.ttf"; path = "/Users/anthonyjauch/Documents/3Moc/jammyios/jammy/Fonts/Coiny-Regular.ttf"; sourceTree = "<absolute>"; };
+		7AD3497D26419FBE00EEE510 /* Jam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jam.swift; sourceTree = "<group>"; };
+		7AD349812641A0B500EEE510 /* CreateJamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJamViewController.swift; sourceTree = "<group>"; };
+		7AD349822641A0B500EEE510 /* CreateJamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateJamViewController.xib; sourceTree = "<group>"; };
+		7AD349862641A2D800EEE510 /* JamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamService.swift; sourceTree = "<group>"; };
+		D3EF4CFE26A3247100850968 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3EF4D0326A461C900850968 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +97,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A1EF4FA263D5F160050EBD9 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				7A1EF4FB263D5F280050EBD9 /* User.swift */,
+				7A1EF506263D61F90050EBD9 /* Connect.swift */,
+				7A1EF509263D627B0050EBD9 /* UserLogin.swift */,
+				7AD3497D26419FBE00EEE510 /* Jam.swift */,
+				7A4AB478264FE2C5003A2A8E /* Role.swift */,
+				7A7CA3AE265E9B3C0069C0CB /* Session.swift */,
+				7A8B6C6A26668692009DB7F4 /* Queries.swift */,
+				7A8B6C6D26668B69009DB7F4 /* QueryUser.swift */,
+				D3EF4D0326A461C900850968 /* Instrument.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		7A1EF4FF263D60060050EBD9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A1EF500263D60130050EBD9 /* UserService.swift */,
+				7AD349862641A2D800EEE510 /* JamService.swift */,
+				7A7CA3B1265E9BAC0069C0CB /* SessionService.swift */,
+				7A8B6C6626668611009DB7F4 /* QueriesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7A1EF50C263D63840050EBD9 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				7A1EF50D263D63930050EBD9 /* LoginViewController.swift */,
+				7A1EF50E263D63930050EBD9 /* LoginViewController.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		7A4A22CA2652759400483DAA /* MyJamsView */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A22CB265275AB00483DAA /* MyJamsViewController.swift */,
+				7A4A22CC265275AB00483DAA /* MyJamsViewController.xib */,
+			);
+			path = MyJamsView;
+			sourceTree = "<group>";
+		};
+		7A4A22D02652794400483DAA /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				7A610CF6266142700047DAA5 /* JamCollectionViewCell */,
+				7A610CF52661425E0047DAA5 /* MyJamsTableViewCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		7A4AB48026526EDF003A2A8E /* JamView */ = {
+			isa = PBXGroup;
+			children = (
+				7A4AB47B26526ED9003A2A8E /* JamViewController.swift */,
+				7A4AB47C26526ED9003A2A8E /* JamViewController.xib */,
+			);
+			path = JamView;
+			sourceTree = "<group>";
+		};
+		7A610CF52661425E0047DAA5 /* MyJamsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7A4A22D12652797100483DAA /* MyJamsTableViewCell.swift */,
+				7A4A22D22652797100483DAA /* MyJamsTableViewCell.xib */,
+			);
+			path = MyJamsTableViewCell;
+			sourceTree = "<group>";
+		};
+		7A610CF6266142700047DAA5 /* JamCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7A610CF7266142A10047DAA5 /* JamCollectionViewCell.swift */,
+				7A610CF8266142A10047DAA5 /* JamCollectionViewCell.xib */,
+			);
+			path = JamCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		7A8B6C6026666669009DB7F4 /* QueriesView */ = {
+			isa = PBXGroup;
+			children = (
+				7A8B6C6126666689009DB7F4 /* QueriesViewController.swift */,
+				7A8B6C6226666689009DB7F4 /* QueriesViewController.xib */,
+			);
+			path = QueriesView;
+			sourceTree = "<group>";
+		};
 		7AC392F9262C8A2100A66151 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +206,67 @@
 		7AC39304262C8A2100A66151 /* jammy */ = {
 			isa = PBXGroup;
 			children = (
+				7A1EF4FF263D60060050EBD9 /* Services */,
+				7A1EF4FA263D5F160050EBD9 /* Structures */,
+				7AC39336262D8EDD00A66151 /* Fonts */,
+				7AC3931C262C8AF800A66151 /* Views */,
 				7AC39305262C8A2100A66151 /* AppDelegate.swift */,
 				7AC39307262C8A2100A66151 /* SceneDelegate.swift */,
-				7AC39309262C8A2100A66151 /* ViewController.swift */,
-				7AC3930B262C8A2100A66151 /* Main.storyboard */,
 				7AC3930E262C8A2400A66151 /* Assets.xcassets */,
-				7AC39310262C8A2400A66151 /* LaunchScreen.storyboard */,
 				7AC39313262C8A2400A66151 /* Info.plist */,
+				D3EF4CFE26A3247100850968 /* LaunchScreen.storyboard */,
 			);
 			path = jammy;
+			sourceTree = "<group>";
+		};
+		7AC3931C262C8AF800A66151 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A8B6C6026666669009DB7F4 /* QueriesView */,
+				7A4A22D02652794400483DAA /* CustomCells */,
+				7A4A22CA2652759400483DAA /* MyJamsView */,
+				7A4AB48026526EDF003A2A8E /* JamView */,
+				7AD349802641A0A200EEE510 /* CreateJamView */,
+				7A1EF50C263D63840050EBD9 /* LoginView */,
+				7AC3932C262D8C1500A66151 /* MenuView */,
+				7AC39325262C8E1F00A66151 /* HomeView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AC39325262C8E1F00A66151 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				7AC3931D262C8B1100A66151 /* HomeViewController.swift */,
+				7AC3931E262C8B1100A66151 /* HomeViewController.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		7AC3932C262D8C1500A66151 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				7AC3932D262D8C2900A66151 /* MenuViewController.swift */,
+				7AC3932E262D8C2900A66151 /* MenuViewController.xib */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		7AC39336262D8EDD00A66151 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7AC39337262D8F0E00A66151 /* Coiny-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7AD349802641A0A200EEE510 /* CreateJamView */ = {
+			isa = PBXGroup;
+			children = (
+				7AD349812641A0B500EEE510 /* CreateJamViewController.swift */,
+				7AD349822641A0B500EEE510 /* CreateJamViewController.xib */,
+			);
+			path = CreateJamView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +326,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC39312262C8A2400A66151 /* LaunchScreen.storyboard in Resources */,
+				7AC39338262D8F2B00A66151 /* Coiny-Regular.ttf in Resources */,
+				7AD349842641A0B500EEE510 /* CreateJamViewController.xib in Resources */,
+				7A610CFA266142A10047DAA5 /* JamCollectionViewCell.xib in Resources */,
+				7A1EF510263D63930050EBD9 /* LoginViewController.xib in Resources */,
+				7A4A22D42652797100483DAA /* MyJamsTableViewCell.xib in Resources */,
 				7AC3930F262C8A2400A66151 /* Assets.xcassets in Resources */,
-				7AC3930D262C8A2100A66151 /* Main.storyboard in Resources */,
+				7A4AB47E26526ED9003A2A8E /* JamViewController.xib in Resources */,
+				7A4A22CE265275AB00483DAA /* MyJamsViewController.xib in Resources */,
+				7AC39320262C8B1100A66151 /* HomeViewController.xib in Resources */,
+				D3EF4CFF26A3247100850968 /* LaunchScreen.storyboard in Resources */,
+				7AC39330262D8C2900A66151 /* MenuViewController.xib in Resources */,
+				7A8B6C6426666689009DB7F4 /* QueriesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,32 +348,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AC3930A262C8A2100A66151 /* ViewController.swift in Sources */,
+				7A1EF50F263D63930050EBD9 /* LoginViewController.swift in Sources */,
+				7A7CA3AF265E9B3C0069C0CB /* Session.swift in Sources */,
+				7A8B6C6E26668B69009DB7F4 /* QueryUser.swift in Sources */,
+				7A8B6C6B26668692009DB7F4 /* Queries.swift in Sources */,
+				D3EF4D0426A461C900850968 /* Instrument.swift in Sources */,
+				7A8B6C6726668611009DB7F4 /* QueriesService.swift in Sources */,
 				7AC39306262C8A2100A66151 /* AppDelegate.swift in Sources */,
+				7A8B6C6326666689009DB7F4 /* QueriesViewController.swift in Sources */,
 				7AC39308262C8A2100A66151 /* SceneDelegate.swift in Sources */,
+				7A1EF50A263D627B0050EBD9 /* UserLogin.swift in Sources */,
+				7AD349872641A2D800EEE510 /* JamService.swift in Sources */,
+				7A7CA3B2265E9BAC0069C0CB /* SessionService.swift in Sources */,
+				7AD349832641A0B500EEE510 /* CreateJamViewController.swift in Sources */,
+				7AD3497E26419FBE00EEE510 /* Jam.swift in Sources */,
+				7A4A22CD265275AB00483DAA /* MyJamsViewController.swift in Sources */,
+				7A4A22D32652797100483DAA /* MyJamsTableViewCell.swift in Sources */,
+				7A1EF501263D60130050EBD9 /* UserService.swift in Sources */,
+				7AC3931F262C8B1100A66151 /* HomeViewController.swift in Sources */,
+				7A4AB47D26526ED9003A2A8E /* JamViewController.swift in Sources */,
+				7A610CF9266142A10047DAA5 /* JamCollectionViewCell.swift in Sources */,
+				7A1EF507263D61F90050EBD9 /* Connect.swift in Sources */,
+				7A4AB479264FE2C5003A2A8E /* Role.swift in Sources */,
+				7A1EF4FC263D5F280050EBD9 /* User.swift in Sources */,
+				7AC3932F262D8C2900A66151 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7AC3930B262C8A2100A66151 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AC3930C262C8A2100A66151 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7AC39310262C8A2400A66151 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AC39311262C8A2400A66151 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7AC39314262C8A2400A66151 /* Debug */ = {

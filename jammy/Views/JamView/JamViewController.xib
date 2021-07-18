@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Coiny-Regular.ttf">
+            <string>Coiny-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JamViewController" customModule="jammy" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="jq4-yw-wDT" id="knx-D7-OsR"/>
+                <outlet property="createdAtField" destination="zzc-5W-J2D" id="lDa-45-VV1"/>
+                <outlet property="descriptionField" destination="IgF-8C-NJz" id="sy0-Xp-z7L"/>
+                <outlet property="titleField" destination="fhz-t4-n8O" id="gvS-Uq-WK1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-t4-n8O">
+                    <rect key="frame" x="484.5" y="57" width="55.5" height="20"/>
+                    <fontDescription key="fontDescription" name="Coiny-Regular" family="Coiny" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzc-5W-J2D">
+                    <rect key="frame" x="786" y="55" width="41" height="24.5"/>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jq4-yw-wDT">
+                    <rect key="frame" x="50" y="766" width="924" height="600"/>
+                    <color key="backgroundColor" red="0.92133218049999999" green="0.73459556969999995" blue="0.41478906119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="600" id="X2h-FI-hfH"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dFR-WM-MDe">
+                        <size key="itemSize" width="250" height="100"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2U8-kL-8gk">
+                    <rect key="frame" x="899" y="50" width="75" height="33"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Delete Jam">
+                                <attributes>
+                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" size="15" name="ChalkboardSE-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="deleteJam:" destination="-1" eventType="touchUpInside" id="ffp-Rm-DIe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-iu-894">
+                    <rect key="frame" x="25" y="99" width="98" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Demandes">
+                                <attributes>
+                                    <color key="NSColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="22" name="ChalkboardSE-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="goToQueries:" destination="-1" eventType="touchUpInside" id="Tiz-c5-Lyd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgF-8C-NJz">
+                    <rect key="frame" x="242" y="416" width="541.5" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="vlW-Ug-AUK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.92133218049999999" green="0.73459556969999995" blue="0.41478906119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2U8-kL-8gk" secondAttribute="trailing" constant="50" id="3Nc-5K-g6A"/>
+                <constraint firstItem="fhz-t4-n8O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3j2-AA-Aw2"/>
+                <constraint firstItem="jq4-yw-wDT" firstAttribute="top" secondItem="IgF-8C-NJz" secondAttribute="bottom" constant="250" id="HQT-50-Kye"/>
+                <constraint firstItem="jq4-yw-wDT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="IHU-jf-h0u"/>
+                <constraint firstItem="IgF-8C-NJz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="242" id="Pno-95-B8l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IgF-8C-NJz" secondAttribute="trailing" constant="240.5" id="Ruh-b1-wXt"/>
+                <constraint firstItem="2U8-kL-8gk" firstAttribute="leading" secondItem="zzc-5W-J2D" secondAttribute="trailing" constant="72" id="UT8-Oj-iGv"/>
+                <constraint firstItem="zzc-5W-J2D" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="55" id="fkX-x6-ITF"/>
+                <constraint firstItem="fhz-t4-n8O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="57" id="gkE-6l-UPg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jq4-yw-wDT" secondAttribute="bottom" id="lDN-5m-bj9"/>
+                <constraint firstItem="2U8-kL-8gk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="noU-g7-EXF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jq4-yw-wDT" secondAttribute="trailing" constant="50" id="sZC-3J-PxE"/>
+            </constraints>
+            <point key="canvasLocation" x="111.91406249999999" y="55.783308931185942"/>
+        </view>
+    </objects>
+</document>

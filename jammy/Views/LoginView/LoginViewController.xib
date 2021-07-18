@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Coiny-Regular.ttf">
+            <string>Coiny-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="jammy" customModuleProvider="target">
+            <connections>
+                <outlet property="email" destination="BTf-Ce-QCr" id="bdV-cT-xfD"/>
+                <outlet property="password" destination="7FW-EP-1LP" id="wSt-sa-GKb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Hv-jF-spe">
+                    <rect key="frame" x="245" y="0.0" width="569" height="312"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTf-Ce-QCr">
+                    <rect key="frame" x="362" y="413" width="300" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="VIB-Nu-6YZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7FW-EP-1LP">
+                    <rect key="frame" x="362" y="506" width="368" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="jlg-hQ-Q2a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6E-38-5iA">
+                    <rect key="frame" x="355" y="587" width="382" height="30"/>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="450" id="BzX-R9-xHi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Coiny-Regular" family="Coiny" pointSize="17"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" systemColor="systemOrangeColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickLogin:" destination="-1" eventType="touchUpInside" id="sqN-oG-9H5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jammy Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpG-78-cYd">
+                    <rect key="frame" x="448" y="256" width="162" height="24"/>
+                    <fontDescription key="fontDescription" name="Coiny-Regular" family="Coiny" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Hv-jF-spe" secondAttribute="trailing" constant="210" id="1mL-cf-LF9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XpG-78-cYd" secondAttribute="trailing" constant="414" id="5q9-Jf-ocd"/>
+                <constraint firstItem="XpG-78-cYd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="448" id="6SV-gV-A5d"/>
+                <constraint firstItem="7FW-EP-1LP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FWx-j5-BTF"/>
+                <constraint firstItem="7FW-EP-1LP" firstAttribute="top" secondItem="BTf-Ce-QCr" secondAttribute="bottom" constant="50" id="IfM-9q-iGJ"/>
+                <constraint firstItem="A6E-38-5iA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ND1-nE-Eco"/>
+                <constraint firstItem="A6E-38-5iA" firstAttribute="top" secondItem="7FW-EP-1LP" secondAttribute="bottom" constant="100" id="cZe-I2-8al"/>
+                <constraint firstItem="5Hv-jF-spe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fMk-Wz-tdJ"/>
+                <constraint firstItem="BTf-Ce-QCr" firstAttribute="top" secondItem="XpG-78-cYd" secondAttribute="bottom" constant="133" id="inh-I7-rz4"/>
+                <constraint firstItem="BTf-Ce-QCr" firstAttribute="top" secondItem="5Hv-jF-spe" secondAttribute="bottom" constant="101" id="oob-o7-jvx"/>
+                <constraint firstItem="5Hv-jF-spe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="245" id="qww-9E-xfO"/>
+                <constraint firstItem="BTf-Ce-QCr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rvJ-Ij-FSh"/>
+                <constraint firstItem="XpG-78-cYd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="256" id="ynE-kF-9gg"/>
+            </constraints>
+            <point key="canvasLocation" x="111.91406249999999" y="88.726207906295741"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="374" height="312"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
