@@ -77,7 +77,7 @@
 		7AC3931E262C8B1100A66151 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		7AC3932D262D8C2900A66151 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7AC3932E262D8C2900A66151 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
-		7AC39337262D8F0E00A66151 /* Coiny-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Coiny-Regular.ttf"; path = "/Users/anthonyjauch/Documents/3Moc/jammyios/jammy/Fonts/Coiny-Regular.ttf"; sourceTree = "<absolute>"; };
+		7AC39337262D8F0E00A66151 /* Coiny-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Coiny-Regular.ttf"; path = "jammy/Fonts/Coiny-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		7AD3497D26419FBE00EEE510 /* Jam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jam.swift; sourceTree = "<group>"; };
 		7AD349812641A0B500EEE510 /* CreateJamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJamViewController.swift; sourceTree = "<group>"; };
 		7AD349822641A0B500EEE510 /* CreateJamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateJamViewController.xib; sourceTree = "<group>"; };
