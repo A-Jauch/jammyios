@@ -32,46 +32,56 @@ class LoginViewController: UIViewController {
                 switch result{
                 case.success(let user):
                     let token = user.accessToken
-                    let logged = "logged"
-                    let tokenFile = getDocumentsDirectory().appendingPathComponent("token.txt")
-                    let loginFile = getDocumentsDirectory().appendingPathComponent("login.txt")
-                    do {
-                        try token.write(to: tokenFile, atomically: true, encoding: String.Encoding.utf8)
-                        try logged.write(to: loginFile, atomically: true, encoding: String.Encoding.utf8)
-                    } catch (let e) {
-                        print(e)
-                    }
+                    var accessGiven = true
                     UserApi.me(token: token){
                         (result) in
                         switch result{
                         case.success(let userDetails):
-                            let uidInt = userDetails.results.id
-                            let uid = String(uidInt)
-                            let name = userDetails.results.name
-                            let lastName = userDetails.results.lastname
-                            
-                            let uidFile = getDocumentsDirectory().appendingPathComponent("id.txt")
-                            let nameFile = getDocumentsDirectory().appendingPathComponent("name.txt")
-                            let lastNameFile = getDocumentsDirectory().appendingPathComponent("lastName.txt")
-                            
-                            do {
-                                try uid.write(to: uidFile, atomically: true, encoding: String.Encoding.utf8)
-                                try name.write(to: nameFile, atomically: true, encoding: String.Encoding.utf8)
-                                try lastName.write(to: lastNameFile, atomically: true, encoding: String.Encoding.utf8)
-                            }catch(let e){
-                                print(e)
+                            if userDetails.results.role.can_create_jam {
+                                let logged = "logged"
+                                let tokenFile = getDocumentsDirectory().appendingPathComponent("token.txt")
+                                let loginFile = getDocumentsDirectory().appendingPathComponent("login.txt")
+                                do {
+                                    try token.write(to: tokenFile, atomically: true, encoding: String.Encoding.utf8)
+                                    try logged.write(to: loginFile, atomically: true, encoding: String.Encoding.utf8)
+                                } catch (let e) {
+                                    print(e)
+                                }
+                                let uidInt = userDetails.results.id
+                                let uid = String(uidInt)
+                                let name = userDetails.results.name
+                                let lastName = userDetails.results.lastname
+                                
+                                let uidFile = getDocumentsDirectory().appendingPathComponent("id.txt")
+                                let nameFile = getDocumentsDirectory().appendingPathComponent("name.txt")
+                                let lastNameFile = getDocumentsDirectory().appendingPathComponent("lastName.txt")
+                                
+                                do {
+                                    try uid.write(to: uidFile, atomically: true, encoding: String.Encoding.utf8)
+                                    try name.write(to: nameFile, atomically: true, encoding: String.Encoding.utf8)
+                                    try lastName.write(to: lastNameFile, atomically: true, encoding: String.Encoding.utf8)
+                                }catch(let e){
+                                    print(e)
+                                }
+                                break
+                            }else{
+                                accessGiven = false
                             }
                             
-                            break
                         case.failure(let e):
                             print(e)
                             break
                         }
                     }
-                    DispatchQueue.main.async {
-                        let menu = MenuViewController(nibName: "MenuViewController", bundle: nil)
-                        self.navigationController?.pushViewController(menu, animated: true)
+                    if accessGiven{
+                        DispatchQueue.main.async {
+                            let menu = MenuViewController(nibName: "MenuViewController", bundle: nil)
+                            self.navigationController?.pushViewController(menu, animated: true)
+                        }
+                    }else{
+                        
                     }
+                    
                     break
                         
                 case.failure(let e):

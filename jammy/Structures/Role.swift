@@ -13,4 +13,5 @@ struct Role:Codable {
     var description: String
     var is_admin: Bool
     var is_dev: Bool
+    var can_create_jam : Bool
 }
